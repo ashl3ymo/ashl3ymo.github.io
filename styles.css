@@ -1,0 +1,156 @@
+body {
+    font-family: 'Abhaya Libre', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .content h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .sidebar {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -220px;  /* Increased to fully hide the sidebar */
+    height: 100%;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.show {
+    left: 0;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+  }
+  
+  .sidebar nav ul li:first-child {
+    margin-top: 40px;  /* Add space only above the first item */
+  }
+  
+  .content {
+    flex-grow: 1;
+    margin: 0 auto;  /* Center the content */
+    max-width: 800px;  /* Limit the width of the content */
+    padding: 100px 80px 40px 80px;  /* Increased padding */
+    transition: margin-left 0.3s ease;
+  }
+  
+  .content.sidebar-open {
+    margin-left: 220px;
+  }
+  
+  .content p {
+    line-height: 1.8;  /* Increased from typical 1.5-1.6 */
+    margin-bottom: 1.5em;  /* Adds more space between paragraphs */
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 1em;  /* Space after the list */
+  }
+  
+  li {
+    line-height: 1.8;  /* Match paragraph spacing */
+    padding-bottom: 0.5em;  /* More space between list items */
+  }
+  
+  /* Add more space between sections */
+  h2, h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 16px;
+    width: 20px;
+  }
+  
+  .menu-icon span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .social-icons {
+    position: fixed;
+    top: 20px;
+    right: 40px; /* Increased right margin */
+    display: flex;
+    gap: 30px; /* Increased space between icons */
+    z-index: 2; /* Ensure icons stay on top */
+  }
+
+  .social-icons a {
+    color: #000;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #666;
+  }
+   /* Add to your styles.css */
+  .project-item {
+    margin-bottom: 10px;
+  }
+
+  .project-item h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .project-item p {
+    margin-bottom: 20px;
+  }
+
+  .project-item ul {
+    margin-top: 10px;
+  }
+
+/* Style for links */
+  .project-item a {
+    color: #000;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .project-item a:hover {
+    color: #666;
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello, I'm Ashley</title>
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="index.html">ASHLEY MO</a></li>
+        <li><a href="beliefs-values.html">BELIEFS / VALUES</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="conferences.html">CONFERENCES</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/ashley-mo/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/ashleymo2025" target="_blank">
+          <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <h1>PROJECTS</h1>
+    <p>I.e. Essentially my children, because I made them.</p>
+
+    <div class="project-item">
+        <h3>LungTech</h3>
+        <p>Developed a machine learning model with 80% accuracy that could detect COPD, asthma, COVID-19, and healthy via cough recordings (<a href="https://www.youtube.com/watch?v=QdLET69214A" target="_blank">demo</a>).
+            Published a (<a href="https://ieeexplore.ieee.org/document/9911027" target="-blank">paper on IEEE Xplore</a>), and presented at IBM's CasconxEvoke and Weavesphere Conference.
+            I designed and am now leading a cough recording data collection study in partnership with the OKB Hope Foundation and MIT's Mobile Tech Lab, with support from the CEO of SoftBank and Google Health.
+        Obtained $22,000 in grants. I also designed and integrated the current model into an iOS app (<a href="https://www.youtube.com/shorts/k8A3fgxqwH0" target="_blank">demo</a>), so it's more user friendly!</p>
+    </div>
+    <div class="project-item">
+        <h3>Kidney Disease Biosensor</h3>
+        <p>Built and optimized an electrochemical sensor that could quantify creatinine for chronic kidney disease assessment, achieving a sensor sensitivity of 0.6 nA/µM.
+            Developed the sensor at Caltech's Gao Lab, and it will soon tested in on-body studies at Caltech and the USC Keck School of Medicine.</p>
+    </div>
+    <div class="project-item">
+        <h3>Iron Biosensor</h3>
+        <p>Designed and built a proof-of-concept of an electrochemical sensor that could quantify iron (micronutrient) in small volumes. 
+            Obtained $40,000 in grants, and mentorship from MIT and BOSLabs.</p>
+    </div>
+    <div class="project-item">
+        <h3>Recipe Generator App</h3>
+        <p>A Swift-based iOS app that generates recipes based on inputted ingredients, for broke-ass + cooking-inept college students (me). 
+            (<a href="https://www.youtube.com/watch?v=9w9CAonYLWM" target="_blank">demo</a>)
+        </p>
+    </div>
+  </div>
+
+  <script>
+    // Same toggle script as in your original code
+    const menuIcon = document.querySelector('.menu-icon');
+    const sidebar = document.querySelector('.sidebar');
+    const content = document.querySelector('.content');
+
+    menuIcon.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
+      content.classList.toggle('sidebar-open');
+    });
+  </script>
+</body>
+</html>
